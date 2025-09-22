@@ -5,7 +5,16 @@ from pathlib import Path
 
 # Define project paths
 project_root = Path(__file__).resolve().parent.parent
-data_dir = data_dir = project_root / "data" 
+from pathlib import Path
+import os
+
+# Use current working directory as base for Render deployment
+data_dir = Path(os.getcwd()) / "data"
+
+print("Data folder path:", data_dir)
+print("Exists?", data_dir.exists())
+print("PDF files:", list(data_dir.glob("*.pdf")))
+
 
 
 # Collect PDF files
