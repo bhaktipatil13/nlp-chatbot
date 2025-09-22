@@ -1,4 +1,4 @@
-from app.chatbot import answer_query
+from app.chatbot_logic import answer_query
 
 if __name__ == "__main__":
     print("📊 Bajaj Finserv Q&A Bot (CLI)")
