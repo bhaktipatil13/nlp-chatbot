@@ -5,7 +5,8 @@ from pathlib import Path
 
 # Define project paths
 project_root = Path(__file__).resolve().parent.parent
-data_dir = project_root / "data"
+data_dir = data_dir = Path(__file__).resolve().parent / "data"
+
 
 # Collect PDF files
 pdf_files = list(data_dir.glob("*.pdf"))
